@@ -1,0 +1,143 @@
+/* ============================================================
+   AL OMRANE PRESTIGE — Design System & Shared Styles
+   Haute Horlogerie & High Real Estate Noir
+   Mobile-First Responsive Approach
+   ============================================================ */
+
+/* --- Base Reset & Defaults --- */
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #121315;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+::-webkit-scrollbar { display: none; }
+
+/* --- Safe Area (iOS) --- */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+.pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+
+/* --- Scrollbar None Utility --- */
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+/* --- Smooth Scroll --- */
+html { scroll-behavior: smooth; }
+
+/* --- Selection --- */
+::selection {
+  background-color: #c5a059;
+  color: #412d00;
+}
+
+/* --- Mobile Bottom Nav Offset --- */
+main {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 0;
+  }
+}
+
+/* --- Header Mobile Menu --- */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* --- Card Hover Effects --- */
+.card-hover {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Image Zoom on Hover --- */
+.img-zoom {
+  transition: transform 0.7s ease-out;
+}
+.group:hover .img-zoom {
+  transform: scale(1.05);
+}
+
+/* --- Glassmorphism Utility --- */
+.glass {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* --- Gold Underline Link --- */
+.gold-link {
+  position: relative;
+  display: inline-block;
+}
+.gold-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #c5a059;
+  transition: width 0.3s ease;
+}
+.gold-link:hover::after {
+  width: 100%;
+}
+
+/* --- Fade In Animation --- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* --- Pulse Animation for Live Indicators --- */
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-live {
+  animation: livePulse 2s ease-in-out infinite;
+}
+
+/* --- Mobile-First Spacing Adjustments --- */
+.section-padding {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* --- Container Max Width --- */
+.container-luxury {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}

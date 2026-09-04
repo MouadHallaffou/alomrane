@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Off-Market — Al Omrane Prestige | Accès Confidentiel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#121315", "surface-dim": "#121315", "surface-bright": "#38393b",
+            "surface-container-lowest": "#0d0e10", "surface-container-low": "#1b1c1e",
+            "surface-container": "#1f2022", "surface-container-high": "#292a2c",
+            "surface-container-highest": "#343537", "surface-variant": "#343537",
+            "on-surface": "#e3e2e5", "on-surface-variant": "#d1c5b4",
+            "on-background": "#e3e2e5", "background": "#121315",
+            "primary": "#e9c176", "on-primary": "#412d00",
+            "primary-container": "#c5a059", "on-primary-container": "#4e3700",
+            "primary-fixed": "#ffdea5", "primary-fixed-dim": "#e9c176",
+            "on-primary-fixed": "#261900", "on-primary-fixed-variant": "#5d4201",
+            "secondary": "#e9c349", "on-secondary": "#3c2f00",
+            "secondary-container": "#af8d11", "on-secondary-container": "#342800",
+            "secondary-fixed": "#ffe088", "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00", "on-secondary-fixed-variant": "#574500",
+            "tertiary": "#c8c6c3", "on-tertiary": "#30312e",
+            "tertiary-container": "#a6a5a2", "on-tertiary-container": "#3b3b39",
+            "tertiary-fixed": "#e4e2de", "tertiary-fixed-dim": "#c8c6c3",
+            "on-tertiary-fixed": "#1b1c1a", "on-tertiary-fixed-variant": "#474744",
+            "error": "#ffb4ab", "on-error": "#690005",
+            "error-container": "#93000a", "on-error-container": "#ffdad6",
+            "outline": "#9a8f80", "outline-variant": "#4e4639",
+            "inverse-surface": "#e3e2e5", "inverse-on-surface": "#303033",
+            "inverse-primary": "#775a19", "surface-tint": "#e9c176"
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          spacing: {
+            "margin-mobile": "1.25rem", "margin-tablet": "2.5rem", "margin-desktop": "5rem",
+            "gutter-xs": "0.5rem", "gutter-sm": "1rem", "gutter-md": "1.5rem",
+            "gutter-lg": "2.5rem", "gutter-xl": "4rem",
+            "section-gap-sm": "4rem", "section-gap-md": "7rem", "section-gap-lg": "11rem"
+          },
+          fontFamily: {
+            "display": ["Playfair Display"], "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-uppercase": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+
+  <!-- ===== HEADER DESKTOP ===== -->
+  <header class="hidden md:block fixed top-0 w-full z-50 bg-surface-container-lowest/90 glass border-b border-outline-variant/20">
+    <div class="max-w-[1440px] mx-auto px-margin-desktop py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Collection Privée</a>
+        <a href="catalogue.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Catalogue</a>
+        <a href="villa-royal-atlas.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Villas & Palais</a>
+        <a href="off-market.html" data-nav-link class="text-primary font-semibold py-2 transition-colors">Off-Market</a>
+        <a href="conciergerie.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Conciergerie</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="tel:+212522980000" class="hidden sm:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-xs">
+          <span class="material-symbols-outlined text-[14px]">call</span>
+          <span class="font-label-uppercase tracking-wider">+212 522 98 00 00</span>
+        </a>
+        <a href="off-market.html" class="px-5 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-primary-fixed transition-all">Mandat Confidential</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HEADER MOBILE ===== -->
+  <header class="md:hidden fixed top-0 w-full z-50 bg-surface-container-lowest/95 glass border-b border-outline-variant/20">
+    <div class="px-margin-mobile py-3 flex items-center justify-between">
+      <a href="index.html" class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane</a>
+      <button id="burger-btn" class="w-10 h-10 flex items-center justify-center text-on-surface" aria-label="Menu">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE SLIDE MENU ===== -->
+  <div id="menu-overlay" class="hidden fixed inset-0 z-[60] bg-black/60"></div>
+  <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-80 h-full z-[70] bg-surface-container-lowest flex flex-col pt-safe">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-outline-variant/20">
+      <span class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane Prestige</span>
+      <button id="close-menu-btn" class="w-10 h-10 flex items-center justify-center text-on-surface-variant" aria-label="Fermer">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 px-4 py-6">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">villa</span> Collection Privée
+      </a>
+      <a href="catalogue.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">travel_explore</span> Catalogue
+      </a>
+      <a href="villa-royal-atlas.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">castle</span> Villas & Palais
+      </a>
+      <a href="off-market.html" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container/10 text-primary font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">lock</span> Off-Market
+      </a>
+      <a href="conciergerie.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">support_agent</span> Conciergerie
+      </a>
+    </nav>
+    <div class="mt-auto px-5 pb-8 border-t border-outline-variant/20 pt-6">
+      <a href="tel:+212522980000" class="flex items-center gap-2 text-primary text-sm">
+        <span class="material-symbols-outlined text-[16px]">call</span> +212 522 98 00 00
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV MOBILE ===== -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 glass border-t border-outline-variant/20">
+    <div class="flex justify-between items-center h-16 px-4">
+      <a href="index.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">villa</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Collection</span>
+      </a>
+      <a href="catalogue.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">travel_explore</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Catalogue</span>
+      </a>
+      <a href="off-market.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-primary font-bold">
+        <div class="relative flex items-center justify-center">
+          <span class="material-symbols-outlined text-[22px]">key</span>
+          <span class="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+        </div>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Off-Market</span>
+      </a>
+      <a href="conciergerie.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">support_agent</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Concierge</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO SECTION OFF-MARKET ===== -->
+    <section class="relative w-full min-h-[600px] md:min-h-[960px] flex flex-col justify-center items-center text-center pt-24 md:pt-36 pb-12 md:pb-16 section-padding overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(18,19,21,0.82) 0%, rgba(18,19,21,0.55) 35%, rgba(18,19,21,0.75) 65%, rgba(18,19,21,0.95) 90%, #121315 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR5FotZbDjVWLe5p5e6hVzUuYnB5PEO7P2Y1NLYlxnYDuwrivBBc4KPWqSiqZ8Wafsf5GGlZX-_FL1RWwduHwGhuJAGT0JEuJdmbIKrSycPshQnjp2vb5YzzICZKaz-fMloRUuIL1sv2bGHj3PKIkG148qp3kAw1yk7efTrt3-CwtwqGyi9l4fa1kRucEvcCOVvV_xIYJoh48DAxMZryjQqAljJ8vP6NurEbLDf5iFHpkstrTVyg')"></div>
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary-container/8 blur-[160px] rounded-full pointer-events-none"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/5 blur-[130px] rounded-full pointer-events-none"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-3xl flex flex-col items-center gap-5 md:gap-7">
+        <!-- Prestige Badge -->
+        <div class="inline-flex items-center gap-2.5 px-5 py-2 bg-surface-container-lowest/80 backdrop-blur-md rounded-full border border-primary-container/20">
+          <span class="w-2 h-2 rounded-full bg-primary animate-live"></span>
+          <span class="font-label-uppercase text-[10px] md:text-label-uppercase tracking-[0.25em] text-primary uppercase">Propriétés Confidentielles</span>
+          <span class="text-outline-variant font-label-uppercase text-[10px] hidden sm:inline">•</span>
+          <span class="font-label-uppercase text-[10px] tracking-wider text-on-surface-variant uppercase hidden sm:inline">Protocole d'État</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-display text-[36px] md:text-[60px] lg:text-[72px] text-on-surface leading-[1.06] tracking-tight">
+          La Collection Privée <br class="hidden md:block">
+          <span class="italic font-normal text-primary">&amp; Confidentielle</span>
+        </h1>
+
+        <p class="font-body-lg text-[15px] md:text-body-lg text-on-surface-variant max-w-xl font-light">
+          Un accès exclusif aux demeures les plus rares du Royaume, soustraites au marché public et réservées à une clientèle de confiance.
+        </p>
+
+        <!-- Trust Indicators -->
+        <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 pt-2">
+          <div class="flex items-center gap-2 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+            <span class="font-label-uppercase text-[10px] md:text-[11px] tracking-wider uppercase">Mandats Notariés</span>
+          </div>
+          <div class="flex items-center gap-2 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+            <span class="font-label-uppercase text-[10px] md:text-[11px] tracking-wider uppercase">Secret Bancaire</span>
+          </div>
+          <div class="flex items-center gap-2 text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+            <span class="font-label-uppercase text-[10px] md:text-[11px] tracking-wider uppercase">Accès sous Sceau</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AUTHENTIFICATION CARTOUCHE ===== -->
+    <section class="relative -mt-8 md:-mt-12 z-20 px-margin-mobile md:px-margin-tablet lg:px-margin-desktop pb-12 md:pb-section-gap-sm">
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-surface-container-low/95 backdrop-blur-xl shadow-2xl border border-outline-variant/15">
+          <!-- Tabs -->
+          <div class="flex border-b border-outline-variant/20">
+            <button id="tab-code" onclick="switchAuthTab('code')" class="flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-primary border-b-2 border-primary bg-primary/5 transition-colors">
+              <span class="material-symbols-outlined text-[16px]">vpn_key</span>
+              <span class="hidden sm:inline">Client Accrédité</span>
+              <span class="sm:hidden">Code</span>
+            </button>
+            <button id="tab-request" onclick="switchAuthTab('request')" class="flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-on-surface-variant border-b-2 border-transparent hover:text-on-surface transition-colors">
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+              <span class="hidden sm:inline">Demande d'Invitation VIP</span>
+              <span class="sm:hidden">Invitation</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Code Entry -->
+          <div id="panel-code" class="p-6 md:p-10">
+            <div class="flex flex-col gap-5 md:gap-6">
+              <div class="flex flex-col gap-2 text-center">
+                <span class="material-symbols-outlined text-primary text-[32px] md:text-[40px] mx-auto">enhanced_encryption</span>
+                <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Accès au Portefeuille Confidentiel</h3>
+                <p class="font-body-sm text-[13px] text-on-surface-variant font-light max-w-md mx-auto">Entrez votre code d'accréditation personnel fourni par votre conseiller dédié pour déverrouiller les dossiers sous scellé.</p>
+              </div>
+              <form onsubmit="handleCodeSubmission(event)" class="flex flex-col gap-4">
+                <div class="relative">
+                  <input id="auth-code" type="text" placeholder="EX: AP-8849-MRK" class="w-full h-14 bg-surface-container px-4 pr-12 text-on-surface placeholder:text-outline font-mono text-[15px] tracking-wider text-center uppercase focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20">
+                  <span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-[18px]">key</span>
+                </div>
+                <button type="submit" class="w-full h-14 bg-primary-container hover:bg-primary text-on-primary-container font-label-uppercase text-[11px] md:text-label-uppercase uppercase tracking-[0.16em] font-semibold flex items-center justify-center gap-2 transition-all shadow-lg">
+                  <span>Déverrouiller le Portefeuille</span>
+                  <span class="material-symbols-outlined text-[18px]">lock_open</span>
+                </button>
+              </form>
+              <div class="flex items-center justify-center gap-2 text-on-surface-variant pt-1">
+                <span class="material-symbols-outlined text-emerald-500 text-[14px]">verified</span>
+                <span class="font-body-sm text-[11px]">Connexion TLS 256-bit • Données chiffrées hors ligne</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Invitation Request -->
+          <div id="panel-request" class="hidden p-6 md:p-10">
+            <form onsubmit="handleRequestSubmission(event)" class="flex flex-col gap-5">
+              <div class="flex flex-col gap-2">
+                <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface text-center">Demander une Invitation VIP</h3>
+                <p class="font-body-sm text-[13px] text-on-surface-variant font-light text-center">Complétez le formulaire ci-dessous. Un conseiller reviendra vers vous sous 24h avec votre accréditation personnelle.</p>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase">Nom & Titre</label>
+                  <input type="text" placeholder="Ex: Mme / M. / Dr / Pr" class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20">
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase">Téléphone</label>
+                  <input type="tel" placeholder="+212 6 00 00 00 00" class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20">
+                </div>
+                <div class="flex flex-col gap-1.5 md:col-span-2">
+                  <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase">Email</label>
+                  <input type="email" placeholder="votre@adresse.com" class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20">
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase">Nature du Bien</label>
+                  <select class="h-12 bg-surface-container px-4 text-on-surface font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20 appearance-none cursor-pointer">
+                    <option class="bg-surface-container" value="">Sélectionnez</option>
+                    <option class="bg-surface-container" value="villa">Villa d'Architecte</option>
+                    <option class="bg-surface-container" value="palais">Palais & Riad</option>
+                    <option class="bg-surface-container" value="penthouse">Penthouse</option>
+                    <option class="bg-surface-container" value="domaine">Domaine & Oliveraie</option>
+                    <option class="bg-surface-container" value="terrain">Terrain Premium</option>
+                    <option class="bg-surface-container" value="immeuble">Immeuble de Rapport</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase">Budget Prévu</label>
+                  <select class="h-12 bg-surface-container px-4 text-on-surface font-body-sm text-[13px] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:bg-surface-container-high transition-colors border border-outline-variant/20 appearance-none cursor-pointer">
+                    <option class="bg-surface-container" value="">Sélectionnez</option>
+                    <option class="bg-surface-container" value="15-25">15M — 25M MAD</option>
+                    <option class="bg-surface-container" value="25-45">25M — 45M MAD</option>
+                    <option class="bg-surface-container" value="45-80">45M — 80M MAD</option>
+                    <option class="bg-surface-container" value="80+">80M+ MAD</option>
+                    <option class="bg-surface-container" value="confidentiel">Confidentiel</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 px-4 py-3 bg-surface-container/60 rounded">
+                <span class="material-symbols-outlined text-primary text-[16px] mt-0.5 flex-shrink-0">info</span>
+                <span class="font-body-sm text-[11px] text-on-surface-variant leading-relaxed">Toutes les informations fournies sont soumises à notre politique de confidentialité. Un NDA (Accord de Non-Divulgation) sera requis avant l'ouverture du portefeuille.</span>
+              </div>
+              <button type="submit" class="w-full h-14 bg-primary-container hover:bg-primary text-on-primary-container font-label-uppercase text-[11px] md:text-label-uppercase uppercase tracking-[0.16em] font-semibold flex items-center justify-center gap-2 transition-all shadow-lg">
+                <span>Envoyer la Demande</span>
+                <span class="material-symbols-outlined text-[18px]">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO TEASER ===== -->
+    <section class="py-12 md:py-section-gap-md section-padding bg-surface">
+      <div class="container-luxury flex flex-col gap-8 md:gap-16">
+        <!-- Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 pb-6 border-b border-surface-container-highest/40">
+          <div class="flex flex-col gap-2 md:gap-3">
+            <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+              <span class="w-6 h-[1px] bg-primary"></span>Aperçu du Portefeuille
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Aperçu du Portefeuille sous Scellé</h2>
+            <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light max-w-xl">Les biens suivants sont soustraits à toute publicité. Un aperçu flouté est présenté à titre indicatif. L'ensemble des informations détaillées est accessible uniquement après accréditation.</p>
+          </div>
+        </div>
+
+        <!-- Masked Property Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-12">
+          <!-- Card 1: Marrakech Palmeraie Sud -->
+          <div class="group relative flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center blur-md scale-110 opacity-60" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyL2pyZV8uzc0sZosMChT9jYIoGOyh5rGnDH2BCc4JjSTDR-n3KSrZVNDJGP0zjJi6cBPWBV24D4_PzdZPQSjU-tFywKfJJTZEInrYgKUWHcQusn2Tv2dmZ8aYM')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-surface-container-lowest/60"></div>
+              <!-- Lock Overlay -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                <span class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center border border-primary-container/30">
+                  <span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+                </span>
+              </div>
+              <!-- Labels -->
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Sous Scellé</span>
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Exclusivité</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Marrakech Palmeraie Sud</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Palais d'Hôtes</h3>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 4 200 m² parc</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">pool</span> Piscine & Hammam</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">visibility_off</span> Prix sur Demande
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2: Tanger Cap Spartel -->
+          <div class="group relative flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center blur-md scale-110 opacity-60" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaA6ZtD-PkC-ENJCYD6T-UIZXyhmaThpMGpHWy72Tx3lH_vDzL3e4uB-LKxNMZ4Lo0RhFhsqJL7WP3PDZWAvhLEUNJC8Zvq7juLhwMxet6cAOwkP8PZTi2git6vyYGqRjwU0WdWqaqgAhEqez-E5XGq9dKx_p_ftJe2nMkC1nv27-7S-pfvTu4Mg212mT8DQDDx9J0tGV_Ay2RJcBwZ60Er9Tva4mdtfhr8ELcWuG86zDbNfFyew')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-surface-container-lowest/60"></div>
+              <!-- Lock Overlay -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                <span class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center border border-primary-container/30">
+                  <span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+                </span>
+              </div>
+              <!-- Labels -->
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Sous Scellé</span>
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Vue Atlantique</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Tanger Cap Spartel</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Demeure Falaise</h3>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 1 600 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">landscape</span> Vue Océan</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">visibility_off</span> Prix sur Demande
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Casablanca Anfa Supérieur -->
+          <div class="group relative flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center blur-md scale-110 opacity-60" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUw6Zl8tFi6zbEK87f9wJOMBBlCGaSmlFq_AFEPv22k40-Vo13F-HoNZgkVtKEc7HilfeRtecR6StFTw1SkSC8-wAAImJMKnXzbJ9H-wYPEv2S3vXQ_VFuyK9NrsujA1pj5IW-WIOmKiLGK_YaGVgMl8JA8GCfjGldits2hk4ef0AkFrZ7pCLJHTmvo7QFTLd9b8HPD9fM2J6rUmG06dJCRrP-QaYQJIr0nKvmbgM4Ge-EUvCB3g')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-surface-container-lowest/60"></div>
+              <!-- Lock Overlay -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                <span class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md flex items-center justify-center border border-primary-container/30">
+                  <span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+                </span>
+              </div>
+              <!-- Labels -->
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Sous Scellé</span>
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Vue Océan</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Casablanca Anfa Supérieur</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Triplex Vue Océan</h3>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 980 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 5 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[14px]">visibility_off</span> Prix sur Demande
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NDA ASSURANCE BANNER ===== -->
+    <section class="py-12 md:py-section-gap-sm section-padding bg-surface-container-lowest">
+      <div class="container-luxury max-w-[1200px]">
+        <div class="bg-gradient-to-b from-surface-container-low to-surface-container-lowest p-6 md:p-10 lg:p-12 relative overflow-hidden shadow-2xl border border-outline-variant/10">
+          <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-center">
+            <span class="material-symbols-outlined text-[160px] md:text-[280px] text-primary">shield</span>
+          </div>
+          <div class="relative z-10 max-w-3xl flex flex-col items-center text-center gap-5 md:gap-6">
+            <span class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[26px]">security</span>
+            </span>
+            <div class="flex flex-col gap-2">
+              <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.24em] text-primary uppercase">Protocole de Confidentialité Renforcé</span>
+              <h2 class="font-headline-lg text-[22px] md:text-headline-lg text-on-surface leading-tight">Chaque dossier est soumis à un Accord de Non-Divulgation (NDA)</h2>
+            </div>
+            <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light max-w-xl">
+              Nos propriétaires exigeant une discrétion absolue, chaque consultation de dossier est traçée, horodatée et soumise à validation juridique préalable. Votre identité reste protégée à chaque étape.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 w-full">
+              <div class="flex flex-col items-center gap-2 px-4 py-3 bg-surface-container/50 rounded">
+                <span class="material-symbols-outlined text-primary text-[20px]">description</span>
+                <span class="font-label-uppercase text-[10px] tracking-wider text-on-surface uppercase">NDA Signé</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 px-4 py-3 bg-surface-container/50 rounded">
+                <span class="material-symbols-outlined text-primary text-[20px]">fingerprint</span>
+                <span class="font-label-uppercase text-[10px] tracking-wider text-on-surface uppercase">Identité Vérifiée</span>
+              </div>
+              <div class="flex flex-col items-center gap-2 px-4 py-3 bg-surface-container/50 rounded">
+                <span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+                <span class="font-label-uppercase text-[10px] tracking-wider text-on-surface uppercase">Données Chiffrées</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-primary-container/20 text-on-surface-variant">
+    <div class="container-luxury section-padding pt-16 md:pt-20 pb-8 md:pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pb-10 md:pb-16 border-b border-surface-container-highest/40">
+        <!-- Brand -->
+        <div class="flex flex-col gap-4">
+          <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+          <p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">Maison d'excellence immobilière au Royaume du Maroc. Résidences souveraines et domaines privés d'une signature patrimoniale unique.</p>
+        </div>
+        <!-- Salons -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Salons Privés</span>
+          <div class="flex flex-col gap-3 font-body-sm text-[13px]">
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Casablanca CFC</span><span class="text-on-surface-variant text-[11px]">Tour CFC, 26ème étage</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Marrakech Hivernage</span><span class="text-on-surface-variant text-[11px]">Avenue Mohammed VI</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Rabat Souissi</span><span class="text-on-surface-variant text-[11px]">Boulevard Mehdi Ben Barka</span></div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Navigation</span>
+          <div class="flex flex-col gap-2 font-body-sm text-[13px]">
+            <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors">Collection Privée</a>
+            <a href="catalogue.html" class="text-on-surface-variant hover:text-primary transition-colors">Catalogue</a>
+            <a href="villa-royal-atlas.html" class="text-on-surface-variant hover:text-primary transition-colors">Villas & Palais</a>
+            <a href="off-market.html" class="text-on-surface-variant hover:text-primary transition-colors">Off-Market</a>
+            <a href="conciergerie.html" class="text-on-surface-variant hover:text-primary transition-colors">Conciergerie</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Conciergerie 24/7</span>
+          <a href="tel:+212522980000" class="font-headline-sm text-[16px] text-on-surface hover:text-primary transition-colors">+212 522 98 00 00</a>
+          <div class="flex items-center gap-3 pt-2">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            <span class="font-label-uppercase text-[10px] tracking-widest text-primary uppercase">Haut Patronage Royal</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-outline">
+        <span>© 2025 Al Omrane Prestige. Tous droits réservés.</span>
+        <span class="font-label-uppercase tracking-wider">Mandats Notariés Agréés • Confidentialité Souveraine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function switchAuthTab(tab) {
+      const tabCode = document.getElementById('tab-code');
+      const tabRequest = document.getElementById('tab-request');
+      const panelCode = document.getElementById('panel-code');
+      const panelRequest = document.getElementById('panel-request');
+
+      if (tab === 'code') {
+        tabCode.className = 'flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-primary border-b-2 border-primary bg-primary/5 transition-colors';
+        tabRequest.className = 'flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-on-surface-variant border-b-2 border-transparent hover:text-on-surface transition-colors';
+        panelCode.classList.remove('hidden');
+        panelRequest.classList.add('hidden');
+      } else {
+        tabRequest.className = 'flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-primary border-b-2 border-primary bg-primary/5 transition-colors';
+        tabCode.className = 'flex-1 flex items-center justify-center gap-2 px-4 py-4 font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.16em] uppercase text-on-surface-variant border-b-2 border-transparent hover:text-on-surface transition-colors';
+        panelRequest.classList.remove('hidden');
+        panelCode.classList.add('hidden');
+      }
+    }
+
+    function handleCodeSubmission(e) {
+      e.preventDefault();
+      const code = document.getElementById('auth-code').value.trim();
+      if (!code) {
+        alert('Veuillez entrer votre code d\'accréditation.');
+        return;
+      }
+      alert('Vérification du code : ' + code + '\n\nUn conseiller Al Omrane Prestige vous contactera sous 24h pour finaliser l\'accès à votre portefeuille confidentiel.');
+    }
+
+    function handleRequestSubmission(e) {
+      e.preventDefault();
+      alert('Votre demande d\'invitation VIP a bien été enregistrée.\n\nUn conseiller dédié vous contactera sous 24h avec votre code d\'accréditation personnel.');
+      switchAuthTab('code');
+    }
+  </script>
+</body>
+</html>

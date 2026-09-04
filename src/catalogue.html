@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Al Omrane Prestige — Catalogue | Résidences d'Exception</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#121315", "surface-dim": "#121315", "surface-bright": "#38393b",
+            "surface-container-lowest": "#0d0e10", "surface-container-low": "#1b1c1e",
+            "surface-container": "#1f2022", "surface-container-high": "#292a2c",
+            "surface-container-highest": "#343537", "surface-variant": "#343537",
+            "on-surface": "#e3e2e5", "on-surface-variant": "#d1c5b4",
+            "on-background": "#e3e2e5", "background": "#121315",
+            "primary": "#e9c176", "on-primary": "#412d00",
+            "primary-container": "#c5a059", "on-primary-container": "#4e3700",
+            "primary-fixed": "#ffdea5", "primary-fixed-dim": "#e9c176",
+            "on-primary-fixed": "#261900", "on-primary-fixed-variant": "#5d4201",
+            "secondary": "#e9c349", "on-secondary": "#3c2f00",
+            "secondary-container": "#af8d11", "on-secondary-container": "#342800",
+            "secondary-fixed": "#ffe088", "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00", "on-secondary-fixed-variant": "#574500",
+            "tertiary": "#c8c6c3", "on-tertiary": "#30312e",
+            "tertiary-container": "#a6a5a2", "on-tertiary-container": "#3b3b39",
+            "tertiary-fixed": "#e4e2de", "tertiary-fixed-dim": "#c8c6c3",
+            "on-tertiary-fixed": "#1b1c1a", "on-tertiary-fixed-variant": "#474744",
+            "error": "#ffb4ab", "on-error": "#690005",
+            "error-container": "#93000a", "on-error-container": "#ffdad6",
+            "outline": "#9a8f80", "outline-variant": "#4e4639",
+            "inverse-surface": "#e3e2e5", "inverse-on-surface": "#303033",
+            "inverse-primary": "#775a19", "surface-tint": "#e9c176"
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          spacing: {
+            "margin-mobile": "1.25rem", "margin-tablet": "2.5rem", "margin-desktop": "5rem",
+            "gutter-xs": "0.5rem", "gutter-sm": "1rem", "gutter-md": "1.5rem",
+            "gutter-lg": "2.5rem", "gutter-xl": "4rem",
+            "section-gap-sm": "4rem", "section-gap-md": "7rem", "section-gap-lg": "11rem"
+          },
+          fontFamily: {
+            "display": ["Playfair Display"], "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-uppercase": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+
+  <!-- ===== HEADER DESKTOP ===== -->
+  <header class="hidden md:block fixed top-0 w-full z-50 bg-surface-container-lowest/90 glass border-b border-outline-variant/20">
+    <div class="max-w-[1440px] mx-auto px-margin-desktop py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Collection Privée</a>
+        <a href="catalogue.html" data-nav-link class="text-primary font-semibold py-2 transition-colors">Catalogue</a>
+        <a href="villa-royal-atlas.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Villas & Palais</a>
+        <a href="off-market.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Off-Market</a>
+        <a href="conciergerie.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Conciergerie</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="tel:+212522980000" class="hidden sm:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-xs">
+          <span class="material-symbols-outlined text-[14px]">call</span>
+          <span class="font-label-uppercase tracking-wider">+212 522 98 00 00</span>
+        </a>
+        <a href="off-market.html" class="px-5 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-primary-fixed transition-all">Mandat Confidential</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HEADER MOBILE ===== -->
+  <header class="md:hidden fixed top-0 w-full z-50 bg-surface-container-lowest/95 glass border-b border-outline-variant/20">
+    <div class="px-margin-mobile py-3 flex items-center justify-between">
+      <a href="index.html" class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane</a>
+      <button id="burger-btn" class="w-10 h-10 flex items-center justify-center text-on-surface" aria-label="Menu">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE SLIDE MENU ===== -->
+  <div id="menu-overlay" class="hidden fixed inset-0 z-[60] bg-black/60"></div>
+  <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-80 h-full z-[70] bg-surface-container-lowest flex flex-col pt-safe">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-outline-variant/20">
+      <span class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane Prestige</span>
+      <button id="close-menu-btn" class="w-10 h-10 flex items-center justify-center text-on-surface-variant" aria-label="Fermer">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 px-4 py-6">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">villa</span> Collection Privée
+      </a>
+      <a href="catalogue.html" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container/10 text-primary font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">travel_explore</span> Catalogue
+      </a>
+      <a href="villa-royal-atlas.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">castle</span> Villas & Palais
+      </a>
+      <a href="off-market.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">lock</span> Off-Market
+      </a>
+      <a href="conciergerie.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">support_agent</span> Conciergerie
+      </a>
+    </nav>
+    <div class="mt-auto px-5 pb-8 border-t border-outline-variant/20 pt-6">
+      <a href="tel:+212522980000" class="flex items-center gap-2 text-primary text-sm">
+        <span class="material-symbols-outlined text-[16px]">call</span> +212 522 98 00 00
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV MOBILE ===== -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 glass border-t border-outline-variant/20">
+    <div class="flex justify-between items-center h-16 px-4">
+      <a href="index.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">villa</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Collection</span>
+      </a>
+      <a href="catalogue.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-primary font-bold">
+        <span class="material-symbols-outlined text-[22px]">travel_explore</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Catalogue</span>
+      </a>
+      <a href="off-market.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <div class="relative flex items-center justify-center">
+          <span class="material-symbols-outlined text-[22px]">key</span>
+          <span class="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+        </div>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Off-Market</span>
+      </a>
+      <a href="conciergerie.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">support_agent</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Concierge</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== EDITORIAL HEADER ===== -->
+    <section class="relative w-full pt-24 md:pt-36 pb-8 md:pb-12 section-padding bg-surface overflow-hidden">
+      <div class="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] bg-primary/5 blur-[160px] rounded-full pointer-events-none"></div>
+      <div class="container-luxury relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8">
+        <div class="flex flex-col gap-3 md:gap-4 max-w-2xl">
+          <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+            <span class="w-6 h-[1px] bg-primary"></span>Catalogue Complet
+          </span>
+          <h1 class="font-display text-[32px] md:text-[52px] text-on-surface leading-[1.1] tracking-tight">
+            Collection Privée — <br class="hidden md:block">
+            <span class="italic font-normal text-primary">Résidences d'Exception</span>
+          </h1>
+          <p class="font-body-lg text-[14px] md:text-body-lg text-on-surface-variant font-light">
+            Parcourez l'intégralité de nos demeures Exclusive Concierge — chaque propriété certifiée, chaque titre vérifié.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 flex-shrink-0">
+          <div class="flex items-center gap-2.5 px-4 py-2 bg-surface-container-lowest/80 backdrop-blur-md rounded-full border border-outline-variant/20">
+            <span class="w-2 h-2 rounded-full bg-primary animate-live"></span>
+            <span class="font-headline-sm text-[16px] md:text-[18px] text-primary font-bold">18</span>
+            <span class="font-label-uppercase text-[10px] md:text-[11px] text-on-surface-variant tracking-wider uppercase">Propriétés Rares Actives</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STICKY FILTER BAR ===== -->
+    <section class="sticky top-0 md:top-[52px] z-40 w-full bg-surface-container-lowest/95 glass border-b border-outline-variant/20">
+      <div class="container-luxury section-padding py-3">
+        <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
+          <!-- Category Buttons -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none flex-shrink-0">
+            <button class="filter-pill px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-uppercase text-[11px] whitespace-nowrap">Tous</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-uppercase text-[11px] whitespace-nowrap hover:bg-surface-container-high transition-colors">Bord de Mer</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-uppercase text-[11px] whitespace-nowrap hover:bg-surface-container-high transition-colors">Domaines Golfiques</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-uppercase text-[11px] whitespace-nowrap hover:bg-surface-container-high transition-colors">Penthouses Aériens</button>
+          </div>
+          <!-- Divider (desktop) -->
+          <div class="hidden md:block w-[1px] h-6 bg-outline-variant/30"></div>
+          <!-- Price Range -->
+          <div class="flex items-center gap-3 flex-shrink-0">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px]">payments</span>
+              <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">Budget</span>
+            </div>
+            <div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded">
+              <span class="font-body-sm text-[12px] text-on-surface">15M</span>
+              <div class="relative w-20 md:w-32 h-1 bg-outline-variant/30 rounded-full">
+                <div class="absolute left-[10%] right-[5%] h-full bg-primary rounded-full"></div>
+                <span class="absolute left-[10%] -top-1 w-3 h-3 bg-primary rounded-full border-2 border-surface-container-lowest shadow-md cursor-grab"></span>
+                <span class="absolute right-[5%] -top-1 w-3 h-3 bg-primary rounded-full border-2 border-surface-container-lowest shadow-md cursor-grab"></span>
+              </div>
+              <span class="font-body-sm text-[12px] text-on-surface">95M</span>
+            </div>
+          </div>
+          <!-- View Toggle -->
+          <div class="hidden md:flex items-center gap-1 ml-auto flex-shrink-0">
+            <button class="w-9 h-9 flex items-center justify-center bg-surface-container-high text-primary rounded">
+              <span class="material-symbols-outlined text-[18px]">grid_view</span>
+            </button>
+            <button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors rounded">
+              <span class="material-symbols-outlined text-[18px]">map</span>
+            </button>
+          </div>
+        </div>
+        <!-- Active filters count -->
+        <div class="flex items-center justify-between mt-2 pt-2 border-t border-surface-container-highest/30">
+          <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">
+            <span class="text-primary font-semibold">6</span> résidences correspondantes
+          </span>
+          <button class="font-label-uppercase text-[10px] text-outline hover:text-primary tracking-wider transition-colors">Réinitialiser les filtres</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROPERTY CARDS GRID ===== -->
+    <section class="py-8 md:py-16 section-padding bg-surface">
+      <div class="container-luxury">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+
+          <!-- Card 1: Villa Aman Palmeraie -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyL2pyZV8uzc0sZosMChT9jYIoGOyh5rGnDH2BCc4JjSTDR-n3KSrZVNDJGP0zjJi6cBPWBV24D4_PzdZPQSjU-tFywKfJJTZEInrYgKUWHcQusn2Tv2dmZ8aYM')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Édition Limitée</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Marrakech</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Villa Aman Palmeraie</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">24.5M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 1 200 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">park</span> 10 000 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 6 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 2: Le Belvédère d'Anfa -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaA6ZtD-PkC-ENJCYD6T-UIZXyhmaThpMGpHWy72Tx3lH_vDzL3e4uB-LKxNMZ4Lo0RhFhsqJL7WP3PDZWAvhLEUNJC8Zvq7juLhwMxet6cAOwkP8PZTi2git6vyYGqRjwU0WdWqaqgAhEqez-E5XGq9dKx_p_ftJe2nMkC1nv27-7S-pfvTu4Mg212mT8DQDDx9J0tGV_Ay2RJcBwZ60Er9Tva4mdtfhr8ELcWuG86zDbNfFyew')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Dernier Étage</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Casablanca</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Le Belvédère d'Anfa</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">32.0M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">deck</span> 220 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">fullscreen</span> 680 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 4 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3: Domaine des Oliviers -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUw6Zl8tFi6zbEK87f9wJOMBBlCGaSmlFq_AFEPv22k40-Vo13F-HoNZgkVtKEc7HilfeRtecR6StFTw1SkSC8-wAAImJMKnXzbJ9H-wYPEv2S3vXQ_VFuyK9NrsujA1pj5IW-WIOmKiLGK_YaGVgMl8JA8GCfjGldits2hk4ef0AkFrZ7pCLJHTmvo7QFTLd9b8HPD9fM2J6rUmG06dJCRrP-QaYQJIr0nKvmbgM4Ge-EUvCB3g')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Signature Golf</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Amelkis</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Domaine des Oliviers</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">19.8M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">pool</span> Piscine</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">hot_tub</span> Hammam</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">golf_course</span> Golf</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 4: Palais Mirage & Jardins -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ3--C5TEpvZQNPa9cZhcrHosjvUQPA-oM6phBL2qg7Zw7wMDHippxRgtHDv_TsJ1lXPUnaKW-4Eb_0fosBhkcBgwGMuDjGolBgttMyRm5NeR_egvAWIORzW3quA85L28CGGBplsWc7jP9KFwyJXwaFMatAQoSY3syrijkHn1RA2UhO76vOHSH4y655nxF2GCxLOYGKjjxXjt3tDs_1RIJGw-tRHUI2f2gAyXPUYNGMGZAEYkXeQ')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Bien d'Exception</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Marrakech</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Palais Mirage & Jardins</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">38.0M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 1 800 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">park</span> 15 000 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 8 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 5: Villa Cap Spartel -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyL2pyZV8uzc0sZosMChT9jYIoGOyh5rGnDH2BCc4JjSTDR-n3KSrZVNDJGP0zjJi6cBPWBV24D4_PzdZPQSjU-tFywKfJJTZEInrYgKUWHcQusn2Tv2dmZ8aYM')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Front de Mer</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Tanger</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Villa Cap Spartel</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">29.0M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 950 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">park</span> 8 000 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 5 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 6: Riad Souverain -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUw6Zl8tFi6zbEK87f9wJOMBBlCGaSmlFq_AFEPv22k40-Vo13F-HoNZgkVtKEc7HilfeRtecR6StFTw1SkSC8-wAAImJMKnXzbJ9H-wYPEv2S3vXQ_VFuyK9NrsujA1pj5IW-WIOmKiLGK_YaGVgMl8JA8GCfjGldits2hk4ef0AkFrZ7pCLJHTmvo7QFTLd9b8HPD9fM2J6rUmG06dJCRrP-QaYQJIr0nKvmbgM4Ge-EUvCB3g')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Patrimoine Royal</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Rabat</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Riad Souverain</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">45.0M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 2 100 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">park</span> 12 500 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 10 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERACTIVE MAP SECTION ===== -->
+    <section class="py-12 md:py-section-gap-md section-padding bg-surface-container-lowest relative overflow-hidden">
+      <div class="absolute -left-20 md:-left-36 top-1/2 -translate-y-1/2 w-80 md:w-[500px] h-80 md:h-[500px] bg-primary/5 blur-[160px] rounded-full pointer-events-none"></div>
+      <div class="container-luxury">
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8 md:gap-gutter-xl">
+          <!-- Map -->
+          <div class="lg:col-span-7 relative">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] bg-surface-container-high overflow-hidden shadow-2xl">
+              <svg viewBox="0 0 800 600" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <!-- Morocco outline simplified -->
+                <path d="M120,100 L280,60 L420,80 L560,70 L680,100 L720,160 L740,280 L700,400 L640,480 L560,520 L440,540 L320,530 L200,500 L120,440 L80,340 L60,240 L80,160 Z" fill="#292a2c" stroke="#4e4639" stroke-width="1.5"/>
+                <!-- Ocean texture -->
+                <rect x="0" y="0" width="800" height="600" fill="url(#oceanGrad)" opacity="0.15"/>
+                <defs>
+                  <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1f2022;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:#292a2c;stop-opacity:1"/>
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <!-- Grid lines -->
+                <line x1="0" y1="150" x2="800" y2="150" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+                <line x1="0" y1="300" x2="800" y2="300" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+                <line x1="0" y1="450" x2="800" y2="450" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+                <line x1="200" y1="0" x2="200" y2="600" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+                <line x1="400" y1="0" x2="400" y2="600" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+                <line x1="600" y1="0" x2="600" y2="600" stroke="#343537" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+
+                <!-- Hub pins -->
+                <!-- Marrakech -->
+                <g class="cursor-pointer" filter="url(#glow)">
+                  <circle cx="280" cy="380" r="14" fill="#c5a059" opacity="0.15"/>
+                  <circle cx="280" cy="380" r="8" fill="#e9c176"/>
+                  <circle cx="280" cy="380" r="3" fill="#412d00"/>
+                </g>
+                <text x="280" y="408" text-anchor="middle" fill="#d1c5b4" font-family="Plus Jakarta Sans" font-size="11" font-weight="500">Marrakech</text>
+                <text x="280" y="420" text-anchor="middle" fill="#9a8f80" font-family="Plus Jakarta Sans" font-size="9">8 propriétés</text>
+
+                <!-- Casablanca -->
+                <g class="cursor-pointer" filter="url(#glow)">
+                  <circle cx="210" cy="280" r="14" fill="#c5a059" opacity="0.15"/>
+                  <circle cx="210" cy="280" r="8" fill="#e9c176"/>
+                  <circle cx="210" cy="280" r="3" fill="#412d00"/>
+                </g>
+                <text x="210" y="308" text-anchor="middle" fill="#d1c5b4" font-family="Plus Jakarta Sans" font-size="11" font-weight="500">Casablanca</text>
+                <text x="210" y="320" text-anchor="middle" fill="#9a8f80" font-family="Plus Jakarta Sans" font-size="9">4 propriétés</text>
+
+                <!-- Rabat -->
+                <g class="cursor-pointer" filter="url(#glow)">
+                  <circle cx="190" cy="220" r="14" fill="#c5a059" opacity="0.15"/>
+                  <circle cx="190" cy="220" r="8" fill="#e9c176"/>
+                  <circle cx="190" cy="220" r="3" fill="#412d00"/>
+                </g>
+                <text x="190" y="205" text-anchor="middle" fill="#d1c5b4" font-family="Plus Jakarta Sans" font-size="11" font-weight="500">Rabat</text>
+                <text x="190" y="193" text-anchor="middle" fill="#9a8f80" font-family="Plus Jakarta Sans" font-size="9">3 propriétés</text>
+
+                <!-- Tanger -->
+                <g class="cursor-pointer" filter="url(#glow)">
+                  <circle cx="160" cy="140" r="14" fill="#c5a059" opacity="0.15"/>
+                  <circle cx="160" cy="140" r="8" fill="#e9c176"/>
+                  <circle cx="160" cy="140" r="3" fill="#412d00"/>
+                </g>
+                <text x="160" y="125" text-anchor="middle" fill="#d1c5b4" font-family="Plus Jakarta Sans" font-size="11" font-weight="500">Tanger</text>
+                <text x="160" y="113" text-anchor="middle" fill="#9a8f80" font-family="Plus Jakarta Sans" font-size="9">2 propriétés</text>
+
+                <!-- Cabo Negro -->
+                <g class="cursor-pointer" filter="url(#glow)">
+                  <circle cx="130" cy="110" r="14" fill="#c5a059" opacity="0.15"/>
+                  <circle cx="130" cy="110" r="8" fill="#e9c176"/>
+                  <circle cx="130" cy="110" r="3" fill="#412d00"/>
+                </g>
+                <text x="130" y="95" text-anchor="middle" fill="#d1c5b4" font-family="Plus Jakarta Sans" font-size="11" font-weight="500">Cabo Negro</text>
+                <text x="130" y="83" text-anchor="middle" fill="#9a8f80" font-family="Plus Jakarta Sans" font-size="9">1 propriété</text>
+              </svg>
+              <!-- Map HUD overlay -->
+              <div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+                <div class="flex items-center gap-2 px-3 py-1 bg-surface-container-lowest/80 backdrop-blur-md rounded text-[10px] md:text-[11px] font-mono text-primary">
+                  <span class="w-2 h-2 rounded-full bg-primary animate-live"></span>
+                  CARTOGRAPHIE INTERACTIVE • 5 PÔLES ACTIFS
+                </div>
+              </div>
+              <!-- Bottom legend -->
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between p-3 bg-surface-container-lowest/85 backdrop-blur-md rounded">
+                <div class="flex items-center gap-4 text-[10px] md:text-[11px] text-on-surface-variant">
+                  <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span> Propriétés actives</span>
+                  <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-outline"></span> Pôles services</span>
+                </div>
+                <button class="px-3 py-1.5 bg-surface-container-high hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-label-uppercase text-[10px] tracking-wider uppercase">Plein Écran</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Narrative -->
+          <div class="lg:col-span-5 flex flex-col gap-4 md:gap-6">
+            <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.22em] text-primary uppercase flex items-center gap-2">
+              <span class="w-5 h-[1px] bg-primary"></span>Emplacements Stratégiques
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Cinq Sanctuaires d'Exception à Travers le Royaume</h2>
+            <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light">
+              Nos pôles d'expertise locale couvrent les territoires les plus convoités du Maroc, avec un réseau de partenaires privilégiés dans chaque région.
+            </p>
+            <div class="grid grid-cols-2 gap-3 md:gap-4 pt-2">
+              <div class="flex flex-col p-3 md:p-4 bg-surface-container-low hover:bg-surface-container transition-colors rounded">
+                <span class="font-headline-sm text-[20px] text-primary font-bold">8</span>
+                <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">Marrakech</span>
+              </div>
+              <div class="flex flex-col p-3 md:p-4 bg-surface-container-low hover:bg-surface-container transition-colors rounded">
+                <span class="font-headline-sm text-[20px] text-primary font-bold">4</span>
+                <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">Casablanca</span>
+              </div>
+              <div class="flex flex-col p-3 md:p-4 bg-surface-container-low hover:bg-surface-container transition-colors rounded">
+                <span class="font-headline-sm text-[20px] text-primary font-bold">3</span>
+                <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">Rabat</span>
+              </div>
+              <div class="flex flex-col p-3 md:p-4 bg-surface-container-low hover:bg-surface-container transition-colors rounded">
+                <span class="font-headline-sm text-[20px] text-primary font-bold">3</span>
+                <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider">Tanger & Cabo Negro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONSEILLER SECTION ===== -->
+    <section class="py-12 md:py-section-gap-md section-padding bg-surface">
+      <div class="container-luxury max-w-[1200px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-gutter-xl items-center">
+          <!-- Photo -->
+          <div class="relative">
+            <div class="relative w-full aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-surface-container-high">
+              <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WnziHgpo5KhyRMt--adAZVweku5W75wpDyWCVSMuu0IHqe0adurXOcuzDDQBMrmIc_PpDFBw3o9JRu4Yzv7dGgtuoVZa_XYJgcP8eJlQXXUj80s1FN_UwSGC8M0f1bDaJdVEhW236SMCjkasJYlO6ZwqT4tWElitsSjHbM6u6otBDG15kRfzdjaRhHz4K_Exywy7jAJAe6fg2o7WEb8drV1nEoEA2c2TprXOOi4Xs_zYuPUBMKx8A')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span class="font-label-uppercase text-[10px] text-emerald-400 tracking-wider uppercase">En ligne — disponible immédiatement</span>
+              </div>
+            </div>
+          </div>
+          <!-- Info -->
+          <div class="flex flex-col gap-4 md:gap-6">
+            <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.22em] text-primary uppercase flex items-center gap-2">
+              <span class="w-5 h-[1px] bg-primary"></span>Votre Conseiller Privé
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Mme Sofia Benslimane</h2>
+            <span class="font-label-uppercase text-[11px] text-primary tracking-wider uppercase">Directrice Clientèle Privée</span>
+            <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light leading-relaxed">
+              Ancienne directrice chez Christie's Real Estate, Mme Benslimane met au service de notre clientèle une expertise de 18 ans dans le marché du luxe immobilier marocain et international.
+            </p>
+            <div class="flex flex-col gap-3 pt-2">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">workspace_premium</span>
+                <div class="flex flex-col">
+                  <span class="font-title-md text-[13px] md:text-title-md text-on-surface">Certification RICS & NAEA</span>
+                  <span class="font-body-sm text-[12px] text-on-surface-variant">Normes internationales d'évaluation et de transaction</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">translate</span>
+                <div class="flex flex-col">
+                  <span class="font-title-md text-[13px] md:text-title-md text-on-surface">Quatre Langues Maîtrisées</span>
+                  <span class="font-body-sm text-[12px] text-on-surface-variant">Français, Arabe, Anglais, Espagnol</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">handshake</span>
+                <div class="flex flex-col">
+                  <span class="font-title-md text-[13px] md:text-title-md text-on-surface">Réseau de Confluents</span>
+                  <span class="font-body-sm text-[12px] text-on-surface-variant">Accès direct aux notaires royaux et banques privées</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-stretch gap-3 pt-4">
+              <a href="https://wa.me/212522980000" target="_blank" class="h-12 md:h-14 px-6 bg-emerald-600 hover:bg-emerald-500 text-white font-label-uppercase text-[11px] md:text-label-uppercase uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2 shadow-lg">
+                <span class="material-symbols-outlined text-[18px]">chat</span> WhatsApp Direct
+              </a>
+              <a href="tel:+212522980000" class="h-12 md:h-14 px-6 bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-uppercase text-[11px] md:text-label-uppercase uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">call</span> +212 522 98 00 00
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OFF-MARKET VAULT ===== -->
+    <section class="py-12 md:py-section-gap-md section-padding bg-surface-container-lowest">
+      <div class="container-luxury max-w-[1200px]">
+        <div class="bg-gradient-to-b from-surface-container-low to-surface-container-lowest p-6 md:p-14 lg:p-16 relative overflow-hidden shadow-2xl">
+          <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-5 pointer-events-none flex items-center justify-center">
+            <span class="material-symbols-outlined text-[200px] md:text-[340px] text-primary">lock_clock</span>
+          </div>
+          <div class="relative z-10 max-w-2xl flex flex-col gap-4 md:gap-6">
+            <div class="inline-flex items-center gap-3">
+              <span class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[22px]">key</span>
+              </span>
+              <span class="font-label-uppercase text-[11px] md:text-label-uppercase tracking-[0.24em] text-primary uppercase">Cercle Off-Market • Accès Privé</span>
+            </div>
+            <h2 class="font-headline-lg text-[22px] md:text-headline-lg text-on-surface leading-tight">Certaines de nos demeures les plus exclusives ne sont pas publiées.</h2>
+            <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light">
+              18 biens d'exception à Rabat, Marrakech et Tanger font l'objet d'une commercialisation strictement confidentielle.
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch gap-3">
+              <input class="flex-1 h-12 md:h-14 bg-surface-container px-4 text-on-surface placeholder:text-outline font-label-uppercase text-[11px] tracking-wider focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="VOTRE ADRESSE COURRIEL" type="email">
+              <a href="off-market.html" class="h-12 md:h-14 px-6 md:px-8 bg-primary-container hover:bg-primary text-on-primary-container font-label-uppercase text-[11px] md:text-label-uppercase uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md">
+                Demander une Invitation VIP
+                <span class="material-symbols-outlined text-[18px]">verified_user</span>
+              </a>
+            </div>
+            <div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-[12px]">
+              <span class="material-symbols-outlined text-primary text-[16px]">security</span>
+              <span>Accès réservé aux acquéreurs qualifiés. NDA préalable obligatoire.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-primary-container/20 text-on-surface-variant">
+    <div class="container-luxury section-padding pt-16 md:pt-20 pb-8 md:pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pb-10 md:pb-16 border-b border-surface-container-highest/40">
+        <!-- Brand -->
+        <div class="flex flex-col gap-4">
+          <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+          <p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">Maison d'excellence immobilière au Royaume du Maroc. Résidences souveraines et domaines privés d'une signature patrimoniale unique.</p>
+        </div>
+        <!-- Salons -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Salons Privés</span>
+          <div class="flex flex-col gap-3 font-body-sm text-[13px]">
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Casablanca CFC</span><span class="text-on-surface-variant text-[11px]">Tour CFC, 26ème étage</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Marrakech Hivernage</span><span class="text-on-surface-variant text-[11px]">Avenue Mohammed VI</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Rabat Souissi</span><span class="text-on-surface-variant text-[11px]">Boulevard Mehdi Ben Barka</span></div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Navigation</span>
+          <div class="flex flex-col gap-2 font-body-sm text-[13px]">
+            <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors">Collection Privée</a>
+            <a href="catalogue.html" class="text-on-surface-variant hover:text-primary transition-colors">Catalogue</a>
+            <a href="villa-royal-atlas.html" class="text-on-surface-variant hover:text-primary transition-colors">Villas & Palais</a>
+            <a href="off-market.html" class="text-on-surface-variant hover:text-primary transition-colors">Off-Market</a>
+            <a href="conciergerie.html" class="text-on-surface-variant hover:text-primary transition-colors">Conciergerie</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Conciergerie 24/7</span>
+          <a href="tel:+212522980000" class="font-headline-sm text-[16px] text-on-surface hover:text-primary transition-colors">+212 522 98 00 00</a>
+          <div class="flex items-center gap-3 pt-2">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            <span class="font-label-uppercase text-[10px] tracking-widest text-primary uppercase">Haut Patronage Royal</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-outline">
+        <span>© 2025 Al Omrane Prestige. Tous droits réservés.</span>
+        <span class="font-label-uppercase tracking-wider">Mandats Notariés Agréés • Confidentialité Souveraine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

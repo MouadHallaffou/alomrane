@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Villa Royal Atlas — Al Omrane Prestige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#121315", "surface-dim": "#121315", "surface-bright": "#38393b",
+            "surface-container-lowest": "#0d0e10", "surface-container-low": "#1b1c1e",
+            "surface-container": "#1f2022", "surface-container-high": "#292a2c",
+            "surface-container-highest": "#343537", "surface-variant": "#343537",
+            "on-surface": "#e3e2e5", "on-surface-variant": "#d1c5b4",
+            "on-background": "#e3e2e5", "background": "#121315",
+            "primary": "#e9c176", "on-primary": "#412d00",
+            "primary-container": "#c5a059", "on-primary-container": "#4e3700",
+            "primary-fixed": "#ffdea5", "primary-fixed-dim": "#e9c176",
+            "on-primary-fixed": "#261900", "on-primary-fixed-variant": "#5d4201",
+            "secondary": "#e9c349", "on-secondary": "#3c2f00",
+            "secondary-container": "#af8d11", "on-secondary-container": "#342800",
+            "secondary-fixed": "#ffe088", "secondary-fixed-dim": "#e9c349",
+            "on-secondary-fixed": "#241a00", "on-secondary-fixed-variant": "#574500",
+            "tertiary": "#c8c6c3", "on-tertiary": "#30312e",
+            "tertiary-container": "#a6a5a2", "on-tertiary-container": "#3b3b39",
+            "tertiary-fixed": "#e4e2de", "tertiary-fixed-dim": "#c8c6c3",
+            "on-tertiary-fixed": "#1b1c1a", "on-tertiary-fixed-variant": "#474744",
+            "error": "#ffb4ab", "on-error": "#690005",
+            "error-container": "#93000a", "on-error-container": "#ffdad6",
+            "outline": "#9a8f80", "outline-variant": "#4e4639",
+            "inverse-surface": "#e3e2e5", "inverse-on-surface": "#303033",
+            "inverse-primary": "#775a19", "surface-tint": "#e9c176"
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          spacing: {
+            "margin-mobile": "1.25rem", "margin-tablet": "2.5rem", "margin-desktop": "5rem",
+            "gutter-xs": "0.5rem", "gutter-sm": "1rem", "gutter-md": "1.5rem",
+            "gutter-lg": "2.5rem", "gutter-xl": "4rem",
+            "section-gap-sm": "4rem", "section-gap-md": "7rem", "section-gap-lg": "11rem"
+          },
+          fontFamily: {
+            "display": ["Playfair Display"], "headline-lg": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "title-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-uppercase": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+
+  <!-- ===== HEADER DESKTOP ===== -->
+  <header class="hidden md:block fixed top-0 w-full z-50 bg-surface-container-lowest/90 glass border-b border-outline-variant/20">
+    <div class="max-w-[1440px] mx-auto px-margin-desktop py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Collection Privée</a>
+        <a href="catalogue.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Catalogue</a>
+        <a href="villa-royal-atlas.html" data-nav-link class="text-primary font-semibold py-2 transition-colors">Villas & Palais</a>
+        <a href="off-market.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Off-Market</a>
+        <a href="conciergerie.html" data-nav-link class="text-on-surface-variant hover:text-on-surface transition-colors py-2">Conciergerie</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="tel:+212522980000" class="hidden sm:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors text-xs">
+          <span class="material-symbols-outlined text-[14px]">call</span>
+          <span class="font-label-uppercase tracking-wider">+212 522 98 00 00</span>
+        </a>
+        <a href="off-market.html" class="px-5 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-primary-fixed transition-all">Mandat Confidential</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HEADER MOBILE ===== -->
+  <header class="md:hidden fixed top-0 w-full z-50 bg-surface-container-lowest/95 glass border-b border-outline-variant/20">
+    <div class="px-margin-mobile py-3 flex items-center justify-between">
+      <a href="index.html" class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane</a>
+      <button id="burger-btn" class="w-10 h-10 flex items-center justify-center text-on-surface" aria-label="Menu">
+        <span class="material-symbols-outlined text-[24px]">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE SLIDE MENU ===== -->
+  <div id="menu-overlay" class="hidden fixed inset-0 z-[60] bg-black/60"></div>
+  <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-80 h-full z-[70] bg-surface-container-lowest flex flex-col pt-safe">
+    <div class="flex items-center justify-between px-5 py-4 border-b border-outline-variant/20">
+      <span class="font-headline-sm text-[15px] tracking-[0.15em] text-primary uppercase">Al Omrane Prestige</span>
+      <button id="close-menu-btn" class="w-10 h-10 flex items-center justify-center text-on-surface-variant" aria-label="Fermer">
+        <span class="material-symbols-outlined text-[22px]">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1 px-4 py-6">
+      <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">villa</span> Collection Privée
+      </a>
+      <a href="catalogue.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">travel_explore</span> Catalogue
+      </a>
+      <a href="villa-royal-atlas.html" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container/10 text-primary font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">castle</span> Villas & Palais
+      </a>
+      <a href="off-market.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">lock</span> Off-Market
+      </a>
+      <a href="conciergerie.html" class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors font-label-uppercase text-[12px] uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">support_agent</span> Conciergerie
+      </a>
+    </nav>
+    <div class="mt-auto px-5 pb-8 border-t border-outline-variant/20 pt-6">
+      <a href="tel:+212522980000" class="flex items-center gap-2 text-primary text-sm">
+        <span class="material-symbols-outlined text-[16px]">call</span> +212 522 98 00 00
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV MOBILE ===== -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 glass border-t border-outline-variant/20">
+    <div class="flex justify-between items-center h-16 px-4">
+      <a href="index.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">villa</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Collection</span>
+      </a>
+      <a href="catalogue.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">travel_explore</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Catalogue</span>
+      </a>
+      <a href="off-market.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <div class="relative flex items-center justify-center">
+          <span class="material-symbols-outlined text-[22px]">key</span>
+          <span class="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+        </div>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Off-Market</span>
+      </a>
+      <a href="conciergerie.html" data-bottom-nav class="flex flex-col items-center justify-center gap-1 flex-1 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[22px]">support_agent</span>
+        <span class="font-label-uppercase text-[9px] tracking-widest uppercase">Concierge</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <section class="pt-24 md:pt-28 px-margin-mobile md:px-margin-desktop">
+      <div class="max-w-[1440px] mx-auto py-4 md:py-6">
+        <nav class="flex items-center gap-2 font-label-uppercase text-[10px] md:text-[11px] tracking-wider text-on-surface-variant overflow-x-auto scrollbar-none">
+          <a href="index.html" class="hover:text-primary transition-colors whitespace-nowrap">COLLECTION PRIVÉE</a>
+          <span class="text-outline/40">/</span>
+          <span class="hover:text-primary transition-colors whitespace-nowrap">MARRAKECH PALMERAIE</span>
+          <span class="text-outline/40">/</span>
+          <span class="text-primary whitespace-nowrap">VILLA ROYAL ATLAS</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== CINEMATIC HERO ===== -->
+    <section class="relative w-full overflow-hidden">
+      <div class="relative w-full aspect-[4/3] md:aspect-[21/9] bg-surface-container-highest">
+        <div class="w-full h-full bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(18,19,21,0.4) 0%, rgba(18,19,21,0.1) 30%, rgba(18,19,21,0.7) 80%, #121315 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR5FotZbDjVWLe5p5e6hVzUuYnB5PEO7P2Y1NLYlxnYDuwrivBBc4KPWqSiqZ8Wafsf5GGlZX-_FL1RWwduHwGhuJAGT0JEuJdmbIKrSycPshQnjp2vb5YzzICZKaz-fMloRUuIL1sv2bGHj3PKIkG148qp3kAw1yk7efTrt3-CwtwqGyi9l4fa1kRucEvcCOVvV_xIYJoh48DAxMZryjQqAljJ8vP6NurEbLDf5iFHpkstrTVyg')"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 md:p-12 lg:p-16">
+          <div class="max-w-4xl flex flex-col gap-4 md:gap-6">
+            <span class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-surface-container-lowest/80 backdrop-blur-md rounded-full self-start">
+              <span class="w-2 h-2 rounded-full bg-primary animate-live"></span>
+              <span class="font-label-uppercase text-[10px] md:text-[11px] tracking-[0.2em] text-primary uppercase">Palais & Domaines Souverains</span>
+            </span>
+            <h1 class="font-display text-[32px] md:text-[56px] lg:text-[64px] text-on-surface leading-[1.08] tracking-tight">
+              Villa Royal<br class="hidden md:block"> <span class="italic font-normal text-primary">Atlas</span>
+            </h1>
+            <p class="font-body-lg text-[14px] md:text-body-lg text-on-surface-variant max-w-xl font-light">Km 8 Route de Fès, Palmeraie</p>
+          </div>
+        </div>
+        <!-- Media bar -->
+        <div class="absolute bottom-6 left-6 md:bottom-12 md:left-12 hidden md:flex items-center gap-3">
+          <button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest/85 backdrop-blur-md text-on-surface hover:text-primary transition-colors font-label-uppercase text-[10px] tracking-wider uppercase">
+            <span class="material-symbols-outlined text-[16px]">videocam</span> Vidéo Drone 4K
+          </button>
+          <button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest/85 backdrop-blur-md text-on-surface hover:text-primary transition-colors font-label-uppercase text-[10px] tracking-wider uppercase">
+            <span class="material-symbols-outlined text-[16px]">360</span> Visite Virtuelle 3D
+          </button>
+          <button class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest/85 backdrop-blur-md text-on-surface hover:text-primary transition-colors font-label-uppercase text-[10px] tracking-wider uppercase">
+            <span class="material-symbols-outlined text-[16px]">architecture</span> Plans DWG
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROPERTY TITLE + PRICE ===== -->
+    <section class="py-8 md:py-14 px-margin-mobile md:px-margin-desktop">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-6 md:gap-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-8">
+          <div class="flex flex-col gap-2">
+            <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+              <span class="w-6 h-[1px] bg-primary"></span>Palmeraie • Marrakech
+            </span>
+            <h2 class="font-display text-[28px] md:text-[40px] text-on-surface tracking-tight">Villa Royal Atlas</h2>
+            <span class="font-body-sm text-[13px] md:text-body-md text-on-surface-variant">Km 8 Route de Fès, Palmeraie</span>
+          </div>
+          <div class="flex flex-col items-start md:items-end gap-1">
+            <span class="font-headline-sm text-[26px] md:text-[34px] text-primary font-semibold">28.500.000 <span class="text-sm font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+            <div class="flex items-center gap-3 font-body-sm text-[12px] text-on-surface-variant">
+              <span>≈ 2.650.000 EUR</span>
+              <span class="text-outline/40">|</span>
+              <span>≈ 2.870.000 USD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Metric Row -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+          <div class="flex flex-col gap-1.5 p-3 md:p-4 bg-surface-container-low border border-outline-variant/15">
+            <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-widest uppercase">Superficie Parc</span>
+            <span class="font-headline-sm text-[18px] md:text-[20px] text-on-surface">4 800 m²</span>
+          </div>
+          <div class="flex flex-col gap-1.5 p-3 md:p-4 bg-surface-container-low border border-outline-variant/15">
+            <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-widest uppercase">Surface Couverte</span>
+            <span class="font-headline-sm text-[18px] md:text-[20px] text-on-surface">980 m²</span>
+          </div>
+          <div class="flex flex-col gap-1.5 p-3 md:p-4 bg-surface-container-low border border-outline-variant/15">
+            <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-widest uppercase">Suites Royales</span>
+            <span class="font-headline-sm text-[18px] md:text-[20px] text-on-surface">6 Masters</span>
+          </div>
+          <div class="flex flex-col gap-1.5 p-3 md:p-4 bg-surface-container-low border border-outline-variant/15">
+            <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-widest uppercase">Bassin Miroir</span>
+            <span class="font-headline-sm text-[18px] md:text-[20px] text-on-surface">26 m</span>
+          </div>
+          <div class="flex flex-col gap-1.5 p-3 md:p-4 bg-surface-container-low border border-outline-variant/15 col-span-2 sm:col-span-3 lg:col-span-1">
+            <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-widest uppercase">Domotique</span>
+            <span class="font-headline-sm text-[18px] md:text-[20px] text-on-surface">Lutron HomeWorks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDITORIAL STORYTELLING ===== -->
+    <section class="py-10 md:py-section-gap-md px-margin-mobile md:px-margin-desktop bg-surface">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-14">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter-xl">
+          <!-- Text Column 1 -->
+          <div class="lg:col-span-5 flex flex-col gap-4 md:gap-6">
+            <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.22em] text-primary uppercase flex items-center gap-2">
+              <span class="w-5 h-[1px] bg-primary"></span>Architecture & Patrimoine
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Une Signature Patrimoniale au Cœur de la Palmeraie</h2>
+            <p class="font-body-md text-[14px] md:text-body-lg text-on-surface-variant font-light leading-relaxed">
+              Née de la collaboration entre l'architecte Khouribga et le bureau d'études parisien Ateliers Jean Nouvel, Villa Royal Atlas déploie un programme résidentiel de prestige sur un terrain arboré de quatre mille huit cents mètres carrés. Les volumes intérieurs, pensés autour d'une cour à marbre central, offrent une circulation naturelle entre espaces de réception et quartiers privés.
+            </p>
+          </div>
+
+          <!-- Vignette 1 -->
+          <div class="lg:col-span-7 relative">
+            <div class="w-full aspect-[16/10] bg-surface-container-highest overflow-hidden">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR5FotZbDjVWLe5p5e6hVzUuYnB5PEO7P2Y1NLYlxnYDuwrivBBc4KPWqSiqZ8Wafsf5GGlZX-_FL1RWwduHwGhuJAGT0JEuJdmbIKrSycPshQnjp2vb5YzzICZKaz-fMloRUuIL1sv2bGHj3PKIkG148qp3kAw1yk7efTrt3-CwtwqGyi9l4fa1kRucEvcCOVvV_xIYJoh48DAxMZryjQqAljJ8vP6NurEbLDf5iFHpkstrTVyg')"></div>
+            </div>
+            <span class="absolute bottom-4 left-4 font-label-uppercase text-[9px] md:text-[10px] tracking-widest text-on-surface-variant uppercase bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1">Façade Sud — Cour d'Honneur</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter-xl">
+          <!-- Vignette 2 -->
+          <div class="lg:col-span-7 relative order-2 lg:order-1">
+            <div class="w-full aspect-[16/10] bg-surface-container-highest overflow-hidden">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaA6ZtD-PkC-ENJCYD6T-UIZXyhmaThpMGpHWy72Tx3lH_vDzL3e4uB-LKxNMZ4Lo0RhFhsqJL7WP3PDZWAvhLEUNJC8Zvq7juLhwMxet6cAOwkP8PZTi2git6vyYGqRjwU0WdWqaqgAhEqez-E5XGq9dKx_p_ftJe2nMkC1nv27-7S-pfvTu4Mg212mT8DQDDx9J0tGV_Ay2RJcBwZ60Er9Tva4mdtfhr8ELcWuG86zDbNfFyew')"></div>
+            </div>
+            <span class="absolute bottom-4 left-4 font-label-uppercase text-[9px] md:text-[10px] tracking-widest text-on-surface-variant uppercase bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1">Bassin Miroir 26m — Nuit</span>
+          </div>
+
+          <!-- Text Column 2 -->
+          <div class="lg:col-span-5 flex flex-col gap-4 md:gap-6 order-1 lg:order-2">
+            <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.22em] text-primary uppercase flex items-center gap-2">
+              <span class="w-5 h-[1px] bg-primary"></span>Artisanat & Matériaux
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Les Maîtres Artisans du Roi</h2>
+            <p class="font-body-md text-[14px] md:text-body-lg text-on-surface-variant font-light leading-relaxed">
+              Chaque surface a été revêtue par les meilleurs artisans du Royaume. Le sol de la villa entier est habillé de marbre Blanc Carrare veiné de gris, tandis que les zelliges à motifs géométriques du palais de la Bahia couronnent les murs du hammam. Les menuiseries en bois de cèdre de l'Atlas, taillées à la main dans les ateliers de Fès, encadrent les huit portes intérieures sculptées.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATERIAL CONFIGURATOR ===== -->
+    <section class="py-10 md:py-section-gap-md px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-6 md:gap-10">
+        <div class="flex flex-col gap-2 md:gap-3">
+          <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+            <span class="w-6 h-[1px] bg-primary"></span>Personnalisation
+          </span>
+          <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Nuancier & Matériaux d'Édition</h2>
+          <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light max-w-2xl">Configurez les finitions de votre résidence. Chaque choix transforme l'espace en fonction de vos préférences esthétiques.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+          <!-- Sols -->
+          <div class="flex-1 flex flex-col gap-3">
+            <span class="font-title-md text-[13px] md:text-title-md text-on-surface font-semibold">Sols</span>
+            <div class="flex items-center gap-3">
+              <button class="swatch-btn group flex flex-col items-center gap-2" data-swatch="sol" data-value="blanc-carrare">
+                <span class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-300 border-2 border-transparent group-hover:border-primary transition-colors"></span>
+                <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase text-center">Blanc<br>Carrare</span>
+              </button>
+              <button class="swatch-btn group flex flex-col items-center gap-2" data-swatch="sol" data-value="noir-sahara-or">
+                <span class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-gray-900 to-amber-900 border-2 border-primary shadow-[0_0_0_2px_theme(colors.surface-container-lowest),0_0_0_3px_theme(colors.primary)] transition-all"></span>
+                <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-wider uppercase text-center font-semibold">Noir Sahara<br>Or</span>
+              </button>
+              <button class="swatch-btn group flex flex-col items-center gap-2" data-swatch="sol" data-value="travertin-antique">
+                <span class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-200 to-amber-500 border-2 border-transparent group-hover:border-primary transition-colors"></span>
+                <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase text-center">Travertin<br>Antique</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Boiseries -->
+          <div class="flex-1 flex flex-col gap-3">
+            <span class="font-title-md text-[13px] md:text-title-md text-on-surface font-semibold">Boiseries</span>
+            <div class="flex items-center gap-3">
+              <button class="swatch-btn group flex flex-col items-center gap-2" data-swatch="boiserie" data-value="cedre-atlas">
+                <span class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-amber-700 to-amber-900 border-2 border-transparent group-hover:border-primary transition-colors"></span>
+                <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase text-center">Cèdre<br>Atlas</span>
+              </button>
+              <button class="swatch-btn group flex flex-col items-center gap-2" data-swatch="boiserie" data-value="noyer-americain">
+                <span class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-yellow-700 to-amber-800 border-2 border-primary shadow-[0_0_0_2px_theme(colors.surface-container-lowest),0_0_0_3px_theme(colors.primary)] transition-all"></span>
+                <span class="font-label-uppercase text-[9px] md:text-[10px] text-primary tracking-wider uppercase text-center font-semibold">Noyer<br>Américain</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live spec preview -->
+        <div class="p-4 md:p-6 bg-surface-container flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 border border-outline-variant/15">
+          <span class="font-label-uppercase text-[10px] md:text-[11px] tracking-widest text-on-surface-variant uppercase">Aperçu</span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4">
+            <span id="preview-sol" class="px-3 py-1 bg-surface-container-low border border-outline-variant/20 font-label-uppercase text-[10px] md:text-[11px] text-primary tracking-wider uppercase">Noir Sahara Or</span>
+            <span class="text-outline/40 hidden sm:inline">|</span>
+            <span id="preview-boiserie" class="px-3 py-1 bg-surface-container-low border border-outline-variant/20 font-label-uppercase text-[10px] md:text-[11px] text-primary tracking-wider uppercase">Noyer Américain</span>
+            <span class="text-outline/40 hidden sm:inline">|</span>
+            <span class="font-body-sm text-[12px] text-on-surface-variant">Estimation sur-mesure transmise sur demande</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOCATION / PROXIMITY ===== -->
+    <section class="py-10 md:py-section-gap-md px-margin-mobile md:px-margin-desktop bg-surface">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-6 md:gap-10">
+        <div class="flex flex-col gap-2 md:gap-3">
+          <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+            <span class="w-6 h-[1px] bg-primary"></span>Emplacement
+          </span>
+          <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Triangle d'Or • Palmeraie Est</h2>
+          <p class="font-body-md text-[14px] md:text-body-md text-on-surface-variant font-light max-w-2xl">Située dans le secteur le plus prestigieux de la Palmeraie, à proximité immédiate des palaces et centres équestres internationaux.</p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
+          <!-- Golf -->
+          <div class="flex flex-col gap-3 p-4 md:p-6 bg-surface-container-low border border-outline-variant/15 group hover:border-primary/30 transition-colors">
+            <span class="material-symbols-outlined text-primary text-[24px] md:text-[28px]">golf_course</span>
+            <div class="flex flex-col gap-1">
+              <span class="font-headline-sm text-[20px] md:text-[24px] text-on-surface">4 <span class="text-sm font-body-sm text-on-surface-variant">min</span></span>
+              <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase">Royal Golf Marrakech</span>
+            </div>
+          </div>
+          <!-- Héliport -->
+          <div class="flex flex-col gap-3 p-4 md:p-6 bg-surface-container-low border border-outline-variant/15 group hover:border-primary/30 transition-colors">
+            <span class="material-symbols-outlined text-primary text-[24px] md:text-[28px]">helicopter</span>
+            <div class="flex flex-col gap-1">
+              <span class="font-headline-sm text-[20px] md:text-[24px] text-on-surface">8 <span class="text-sm font-body-sm text-on-surface-variant">min</span></span>
+              <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase">Héliport Privé</span>
+            </div>
+          </div>
+          <!-- Palaces -->
+          <div class="flex flex-col gap-3 p-4 md:p-6 bg-surface-container-low border border-outline-variant/15 group hover:border-primary/30 transition-colors">
+            <span class="material-symbols-outlined text-primary text-[24px] md:text-[28px]">apartment</span>
+            <div class="flex flex-col gap-1">
+              <span class="font-headline-sm text-[20px] md:text-[24px] text-on-surface">10 <span class="text-sm font-body-sm text-on-surface-variant">min</span></span>
+              <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase">Palaces & Riviera</span>
+            </div>
+          </div>
+          <!-- Aéroport -->
+          <div class="flex flex-col gap-3 p-4 md:p-6 bg-surface-container-low border border-outline-variant/15 group hover:border-primary/30 transition-colors">
+            <span class="material-symbols-outlined text-primary text-[24px] md:text-[28px]">flight</span>
+            <div class="flex flex-col gap-1">
+              <span class="font-headline-sm text-[20px] md:text-[24px] text-on-surface">18 <span class="text-sm font-body-sm text-on-surface-variant">min</span></span>
+              <span class="font-label-uppercase text-[9px] md:text-[10px] text-on-surface-variant tracking-wider uppercase">Aéroport RAK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STICKY ADVISOR SIDEBAR (Desktop) / BOTTOM CARD (Mobile) ===== -->
+    <section class="hidden md:block py-10 md:py-section-gap-md px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+      <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
+        <!-- Main content fills left -->
+        <div class="lg:col-span-8 flex flex-col gap-6">
+          <h3 class="font-headline-md text-[22px] md:text-headline-md text-on-surface">Découvrir cette Propriété</h3>
+          <p class="font-body-md text-[14px] md:text-body-lg text-on-surface-variant font-light">Villa Royal Atlas est une propriété exclusive Al Omrane Prestige. Un conseiller dédié vous accompagne pour une présentation privée confidentielle, incluant survol drone, visite virtuelle 3D et envoi du dossier complet.</p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button class="open-drawer-btn px-6 py-3 bg-primary-container text-on-primary-container font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-primary transition-all flex items-center gap-2 shadow-md">
+              <span class="material-symbols-outlined text-[16px]">calendar_month</span> Réserver une Visite
+            </button>
+            <a href="https://wa.me/212522980000" target="_blank" class="px-6 py-3 bg-emerald-500/20 text-emerald-500 font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-emerald-500 hover:text-white transition-all flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp VIP
+            </a>
+          </div>
+        </div>
+
+        <!-- Sticky sidebar card -->
+        <div class="lg:col-span-4">
+          <div class="sticky top-28 flex flex-col bg-surface-container-low border border-outline-variant/15 overflow-hidden">
+            <!-- Advisor profile -->
+            <div class="flex items-center gap-3 p-5 border-b border-outline-variant/15">
+              <div class="relative w-11 h-11 flex-shrink-0">
+                <img alt="Mme Sofia Benslimane" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida/AEtjO1WnziHgpo5KhyRMt--adAZVweku5W75wpDyWCVSMuu0IHqe0adurXOcuzDDQBMrmIc_PpDFBw3o9JRu4Yzv7dGgtuoVZa_XYJgcP8eJlQXXUj80s1FN_UwSGC8M0f1bDaJdVEhW236SMCjkasJYlO6ZwqT4tWElitsSjHbM6u6otBDG15kRfzdjaRhHz4K_Exywy7jAJAe6fg2o7WEb8drV1nEoEA2c2TprXOOi4Xs_zYuPUBMKx8A">
+                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-low"></span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-title-md text-[13px] text-on-surface font-semibold">Mme Sofia Benslimane</span>
+                <span class="font-label-uppercase text-[9px] text-primary tracking-wider uppercase">Directrice Clientèle Privée</span>
+              </div>
+            </div>
+            <!-- Price summary -->
+            <div class="flex flex-col gap-2 p-5 border-b border-outline-variant/15">
+              <span class="font-label-uppercase text-[10px] text-on-surface-variant tracking-wider uppercase">Prix</span>
+              <span class="font-headline-sm text-[22px] text-primary font-semibold">28.500.000 MAD</span>
+              <div class="flex items-center gap-3 font-body-sm text-[11px] text-on-surface-variant">
+                <span>≈ 2.650.000 EUR</span>
+                <span class="text-outline/40">|</span>
+                <span>≈ 2.870.000 USD</span>
+              </div>
+            </div>
+            <!-- CTA -->
+            <div class="flex flex-col gap-3 p-5">
+              <button class="open-drawer-btn w-full py-3 bg-primary-container text-on-primary-container font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-primary transition-all flex items-center justify-center gap-2 shadow-md">
+                <span class="material-symbols-outlined text-[16px]">calendar_month</span> Réserver une Visite
+              </button>
+              <a href="https://wa.me/212522980000" target="_blank" class="w-full py-3 bg-emerald-500/20 text-emerald-500 font-label-uppercase text-[11px] uppercase tracking-[0.14em] hover:bg-emerald-500 hover:text-white transition-all flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[16px]">chat</span> WhatsApp VIP
+              </a>
+              <a href="tel:+212522980000" class="flex items-center justify-center gap-2 pt-2 text-primary text-sm font-label-uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[14px]">call</span> +212 522 98 00 00
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MOBILE BOTTOM ADVISOR CARD ===== -->
+    <div id="mobile-advisor" class="md:hidden fixed bottom-20 left-0 right-0 z-40 px-margin-mobile">
+      <div class="bg-surface-container-high/95 glass shadow-2xl border border-outline-variant/20 rounded-xl p-4 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="relative w-9 h-9 flex-shrink-0">
+            <img alt="Mme Sofia Benslimane" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida/AEtjO1WnziHgpo5KhyRMt--adAZVweku5W75wpDyWCVSMuu0IHqe0adurXOcuzDDQBMrmIc_PpDFBw3o9JRu4Yzv7dGgtuoVZa_XYJgcP8eJlQXXUj80s1FN_UwSGC8M0f1bDaJdVEhW236SMCjkasJYlO6ZwqT4tWElitsSjHbM6u6otBDG15kRfzdjaRhHz4K_Exywy7jAJAe6fg2o7WEb8drV1nEoEA2c2TprXOOi4Xs_zYuPUBMKx8A">
+          </div>
+          <div class="flex flex-col min-w-0">
+            <span class="font-headline-sm text-[15px] text-on-surface font-semibold truncate">28.500.000 MAD</span>
+            <span class="font-body-sm text-[11px] text-on-surface-variant truncate">Villa Royal Atlas</span>
+          </div>
+        </div>
+        <button class="open-drawer-btn flex-shrink-0 px-4 py-2.5 bg-primary text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow-md">
+          Visite
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== BOOKING DRAWER OVERLAY ===== -->
+    <div id="drawer-overlay" class="hidden fixed inset-0 z-[80] bg-black/60"></div>
+    <div id="booking-drawer" class="mobile-menu fixed top-0 right-0 w-full sm:w-[420px] h-full z-[90] bg-surface-container-lowest flex flex-col">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-outline-variant/20">
+        <span class="font-headline-sm text-[16px] text-on-surface">Réserver une Visite Privée</span>
+        <button id="close-drawer-btn" class="w-10 h-10 flex items-center justify-center text-on-surface-variant" aria-label="Fermer">
+          <span class="material-symbols-outlined text-[22px]">close</span>
+        </button>
+      </div>
+      <form id="booking-form" class="flex flex-col gap-4 p-5 flex-1 overflow-y-auto">
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-name">Nom complet</label>
+          <input id="booking-name" type="text" required class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Votre nom">
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-email">Email</label>
+          <input id="booking-email" type="email" required class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="votre@email.com">
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-phone">Téléphone</label>
+          <input id="booking-phone" type="tel" required class="h-12 bg-surface-container px-4 text-on-surface placeholder:text-outline font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="+212 6XX XXX XXX">
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-date">Date souhaitée</label>
+          <input id="booking-date" type="date" required class="h-12 bg-surface-container px-4 text-on-surface font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all">
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-mode">Mode de visite</label>
+          <select id="booking-mode" class="h-12 bg-surface-container px-4 text-on-surface font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all cursor-pointer appearance-none">
+            <option class="bg-surface-container" value="sur-site">Sur Site</option>
+            <option class="bg-surface-container" value="3d">Visite Virtuelle 3D</option>
+            <option class="bg-surface-container" value="drone">Survole Drone 4K</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1.5 flex-1">
+          <label class="font-label-uppercase text-[10px] tracking-widest text-on-surface-variant uppercase" for="booking-note">Message (optionnel)</label>
+          <textarea id="booking-note" rows="3" class="bg-surface-container px-4 py-3 text-on-surface placeholder:text-outline font-body-md text-[14px] focus:outline-none focus:ring-1 focus:ring-primary transition-all resize-none" placeholder="Vos questions ou préférences..."></textarea>
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase tracking-[0.16em] font-semibold hover:bg-primary-fixed transition-all flex items-center justify-center gap-2 shadow-lg">
+          <span>Confirmer la Réservation</span>
+          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+        </button>
+        <div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-[11px] pt-1">
+          <span class="material-symbols-outlined text-primary text-[14px]">security</span>
+          <span>Vos données sont protégées. Contact sous 24h.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- ===== COMPARABLE PROPERTIES ===== -->
+    <section class="py-10 md:py-section-gap-md px-margin-mobile md:px-margin-desktop bg-surface">
+      <div class="max-w-[1440px] mx-auto flex flex-col gap-6 md:gap-10">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 pb-6 border-b border-surface-container-highest/40">
+          <div class="flex flex-col gap-2 md:gap-3">
+            <span class="font-label-uppercase text-[11px] md:text-[12px] tracking-[0.24em] text-primary uppercase flex items-center gap-2">
+              <span class="w-6 h-[1px] bg-primary"></span>Propriétés Comparables
+            </span>
+            <h2 class="font-headline-lg text-[24px] md:text-headline-lg text-on-surface">Autres Joyaux de la Collection</h2>
+          </div>
+          <a href="catalogue.html" class="font-label-uppercase text-[11px] text-primary hover:text-primary-fixed tracking-wider uppercase gold-link self-start md:self-auto">Voir tout le catalogue →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <!-- Comparable 1 -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBaA6ZtD-PkC-ENJCYD6T-UIZXyhmaThpMGpHWy72Tx3lH_vDzL3e4uB-LKxNMZ4Lo0RhFhsqJL7WP3PDZWAvhLEUNJC8Zvq7juLhwMxet6cAOwkP8PZTi2git6vyYGqRjwU0WdWqaqgAhEqez-E5XGq9dKx_p_ftJe2nMkC1nv27-7S-pfvTu4Mg212mT8DQDDx9J0tGV_Ay2RJcBwZ60Er9Tva4mdtfhr8ELcWuG86zDbNfFyew')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Palais & Domaines</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Marrakech</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Palais Mirage</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">38M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">straighten</span> 1 450 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">park</span> 6 200 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 8 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Comparable 2 -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ3--C5TEpvZQNPa9cZhcrHosjvUQPA-oM6phBL2qg7Zw7wMDHippxRgtHDv_TsJ1lXPUnaKW-4Eb_0fosBhkcBgwGMuDjGolBgttMyRm5NeR_egvAWIORzW3quA85L28CGGBplsWc7jP9KFwyJXwaFMatAQoSY3syrijkHn1RA2UhO76vOHSH4y655nxF2GCxLOYGKjjxXjt3tDs_1RIJGw-tRHUI2f2gAyXPUYNGMGZAEYkXeQ')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-secondary-fixed font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Casablanca Anfa</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Casablanca</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Le Belvédère</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">32M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">deck</span> 220 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">fullscreen</span> 680 m²</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 4 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Comparable 3 -->
+          <a href="villa-royal-atlas.html" class="group flex flex-col bg-surface-container-low overflow-hidden card-hover">
+            <div class="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden bg-surface-container-highest">
+              <div class="img-zoom w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUw6Zl8tFi6zbEK87f9wJOMBBlCGaSmlFq_AFEPv22k40-Vo13F-HoNZgkVtKEc7HilfeRtecR6StFTw1SkSC8-wAAImJMKnXzbJ9H-wYPEv2S3vXQ_VFuyK9NrsujA1pj5IW-WIOmKiLGK_YaGVgMl8JA8GCfjGldits2hk4ef0AkFrZ7pCLJHTmvo7QFTLd9b8HPD9fM2J6rUmG06dJCRrP-QaYQJIr0nKvmbgM4Ge-EUvCB3g')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-uppercase text-[9px] tracking-[0.2em] px-3 py-1 uppercase shadow-md">Tanger Cap Spartel</span>
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                <div>
+                  <span class="font-label-uppercase text-[10px] text-on-surface-variant uppercase tracking-widest block">Tanger</span>
+                  <h3 class="font-headline-sm text-[18px] md:text-headline-sm text-on-surface">Villa Cap Spartel</h3>
+                </div>
+                <span class="font-headline-sm text-[18px] md:text-headline-sm text-primary font-semibold">29M <span class="text-xs font-body-sm font-normal text-on-surface-variant">MAD</span></span>
+              </div>
+            </div>
+            <div class="p-4 flex flex-col gap-3">
+              <div class="flex items-center justify-between text-[12px] md:text-body-sm text-on-surface-variant pt-1">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">pool</span> Piscine</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">water</span> Vue Mer</span>
+                <span class="text-outline/40">|</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">king_bed</span> 5 Suites</span>
+              </div>
+              <span class="w-full py-2.5 px-4 bg-surface-container-high text-primary font-label-uppercase text-[11px] text-center flex items-center justify-center gap-2 transition-colors hover:bg-primary hover:text-on-primary">
+                Consulter le dossier <span class="material-symbols-outlined text-[14px]">lock</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-primary-container/20 text-on-surface-variant">
+    <div class="container-luxury section-padding pt-16 md:pt-20 pb-8 md:pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 pb-10 md:pb-16 border-b border-surface-container-highest/40">
+        <!-- Brand -->
+        <div class="flex flex-col gap-4">
+          <span class="font-headline-sm text-[17px] tracking-[0.2em] text-primary uppercase">Al Omrane Prestige</span>
+          <p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">Maison d'excellence immobilière au Royaume du Maroc. Résidences souveraines et domaines privés d'une signature patrimoniale unique.</p>
+        </div>
+        <!-- Salons -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Salons Privés</span>
+          <div class="flex flex-col gap-3 font-body-sm text-[13px]">
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Casablanca CFC</span><span class="text-on-surface-variant text-[11px]">Tour CFC, 26ème étage</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Marrakech Hivernage</span><span class="text-on-surface-variant text-[11px]">Avenue Mohammed VI</span></div>
+            <div class="flex flex-col"><span class="text-on-surface font-semibold">Rabat Souissi</span><span class="text-on-surface-variant text-[11px]">Boulevard Mehdi Ben Barka</span></div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Navigation</span>
+          <div class="flex flex-col gap-2 font-body-sm text-[13px]">
+            <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors">Collection Privée</a>
+            <a href="catalogue.html" class="text-on-surface-variant hover:text-primary transition-colors">Catalogue</a>
+            <a href="villa-royal-atlas.html" class="text-on-surface-variant hover:text-primary transition-colors">Villas & Palais</a>
+            <a href="off-market.html" class="text-on-surface-variant hover:text-primary transition-colors">Off-Market</a>
+            <a href="conciergerie.html" class="text-on-surface-variant hover:text-primary transition-colors">Conciergerie</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="flex flex-col gap-4">
+          <span class="font-label-uppercase text-[11px] tracking-[0.2em] text-primary uppercase">Conciergerie 24/7</span>
+          <a href="tel:+212522980000" class="font-headline-sm text-[16px] text-on-surface hover:text-primary transition-colors">+212 522 98 00 00</a>
+          <div class="flex items-center gap-3 pt-2">
+            <span class="w-2 h-2 rounded-full bg-primary"></span>
+            <span class="font-label-uppercase text-[10px] tracking-widest text-primary uppercase">Haut Patronage Royal</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 text-[11px] text-outline">
+        <span>© 2025 Al Omrane Prestige. Tous droits réservés.</span>
+        <span class="font-label-uppercase tracking-wider">Mandats Notariés Agréés • Confidentialité Souveraine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ===== Swatch Configurator =====
+    const swatchLabels = {
+      sol: { "blanc-carrare": "Blanc Carrare", "noir-sahara-or": "Noir Sahara Or", "travertin-antique": "Travertin Antique" },
+      boiserie: { "cedre-atlas": "Cèdre Atlas", "noyer-americain": "Noyer Américain" }
+    };
+    const selectedSwatches = { sol: "noir-sahara-or", boiserie: "noyer-americain" };
+
+    function updateSwatchVisuals() {
+      document.querySelectorAll(".swatch-btn").forEach(function(btn) {
+        var swatch = btn.dataset.swatch;
+        var value = btn.dataset.value;
+        var isActive = selectedSwatches[swatch] === value;
+        var circle = btn.querySelector("span:first-child");
+        var label = btn.querySelector("span:last-child");
+
+        if (circle) {
+          if (isActive) {
+            circle.classList.add("border-primary", "shadow-[0_0_0_2px_theme(colors.surface-container-lowest),0_0_0_3px_theme(colors.primary)]");
+            circle.classList.remove("border-transparent", "group-hover:border-primary");
+          } else {
+            circle.classList.remove("border-primary", "shadow-[0_0_0_2px_theme(colors.surface-container-lowest),0_0_0_3px_theme(colors.primary)]");
+            circle.classList.add("border-transparent");
+          }
+        }
+        if (label) {
+          if (isActive) {
+            label.classList.add("text-primary", "font-semibold");
+            label.classList.remove("text-on-surface-variant");
+          } else {
+            label.classList.remove("text-primary", "font-semibold");
+            label.classList.add("text-on-surface-variant");
+          }
+        }
+      });
+
+      var solPreview = document.getElementById("preview-sol");
+      var boiseriePreview = document.getElementById("preview-boiserie");
+      if (solPreview) solPreview.textContent = swatchLabels.sol[selectedSwatches.sol] || "";
+      if (boiseriePreview) boiseriePreview.textContent = swatchLabels.boiserie[selectedSwatches.boiserie] || "";
+    }
+
+    document.querySelectorAll(".swatch-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var swatch = this.dataset.swatch;
+        var value = this.dataset.value;
+        selectedSwatches[swatch] = value;
+        updateSwatchVisuals();
+      });
+    });
+
+    // ===== Booking Drawer =====
+    var drawerOverlay = document.getElementById("drawer-overlay");
+    var bookingDrawer = document.getElementById("booking-drawer");
+    var openDrawerBtns = document.querySelectorAll(".open-drawer-btn");
+    var closeDrawerBtn = document.getElementById("close-drawer-btn");
+
+    function openDrawer() {
+      if (drawerOverlay) drawerOverlay.classList.remove("hidden");
+      if (bookingDrawer) bookingDrawer.classList.remove("translate-x-full");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeDrawer() {
+      if (drawerOverlay) drawerOverlay.classList.add("hidden");
+      if (bookingDrawer) bookingDrawer.classList.add("translate-x-full");
+      document.body.style.overflow = "";
+    }
+
+    openDrawerBtns.forEach(function(btn) {
+      btn.addEventListener("click", openDrawer);
+    });
+    if (closeDrawerBtn) closeDrawerBtn.addEventListener("click", closeDrawer);
+    if (drawerOverlay) drawerOverlay.addEventListener("click", closeDrawer);
+
+    // ===== Drawer Form Submission =====
+    var bookingForm = document.getElementById("booking-form");
+    if (bookingForm) {
+      bookingForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        var submitBtn = this.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">progress_activity</span> Envoi en cours...';
+          submitBtn.disabled = true;
+        }
+        setTimeout(function() {
+          if (bookingForm) {
+            bookingForm.innerHTML = '<div class="flex flex-col items-center justify-center gap-4 py-16 text-center"><span class="material-symbols-outlined text-primary text-[48px]">check_circle</span><span class="font-headline-sm text-[20px] text-on-surface">Demande Envoyée</span><span class="font-body-md text-[14px] text-on-surface-variant font-light max-w-xs">Un conseiller Al Omrane Prestige vous recontacte sous 24h pour confirmer votre visite privée.</span><button onclick="closeDrawer()" class="mt-4 px-6 py-3 bg-surface-container-high text-primary font-label-uppercase text-[11px] uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-all">Fermer</button></div>';
+          }
+        }, 1800);
+      });
+    }
+  </script>
+</body>
+</html>
